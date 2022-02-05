@@ -68,16 +68,431 @@ input, textarea, select {
   font-family: "Jost";
   src: url(fonts/just-book.woff2), url(fonts/jost-book.woff);
 }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(fonts/HelveticaNeue.woff);
+}
+
 body {
-  background-color: white;
-  color: green;
+  color: #000;
   line-height: 1.5;
-  font-family: "Jost";
+  font-size: 18px;
+  font-family: "Helvetica Neue";
 }
 
-h1 img {
-  width: 24px;
-  height: 24px;
+section.content {
+  cursor: url(img/custom.png), default;
+  cursor: url(img/custom.png), pointer;
+  cursor: url(img/custom.png), help;
+  cursor: url(img/custom.png), url();
+  cursor: url(img/custom.png), move;
+  cursor: url(img/custom.png), wait;
+  height: calc(100vh - 64px);
+  width: calc(100vw - 64px);
+  margin: 32px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+a {
+  cursor: url(img/custom.png), default;
+  cursor: url(img/custom.png), pointer;
+}
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+h2 {
+  font-family: Helvetica Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 38px;
+
+color: #000000;
+}
+h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.recipes {
+  width: 60vw;
+  display: block;
+  height: calc(100vh - 105px);
+}
+
+
+.list {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+.list a {
+  height: 156px;
+  width: 224px;
+  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.list .breakfast {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.list .lunch {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.list .dinner {
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.list .dessert {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+section.discovery {
+  margin-left: 32px;
+}
+
+.gamewidget {
+  height: 344px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C4C4C4;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gamewidget h3 {
+  width: 104px;
+}
 /*# sourceMappingURL=serenidad.css.map */
+
+.image-holder {
+width: 480px;
+height: 270px;
+background-color: #C4C4C4;
+border-radius: 12px;
+margin-bottom: 12px;
+}
+
+.wrapper {
+  min-height: 343px;
+  display: flex;
+  overflow-x: auto;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  min-width: 100vw;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+.wrapper .recipe-item{
+  width: 480px;
+  margin-right: 32px;
+  height: 343px;
+  text-decoration: none;
+  color: #000;
+}
+
+.recipe-item h2 {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.recipe-item p {
+  text-decoration: none;
+  color: #000;
+}
+
+.recipe-item:nth-child(1) {
+  margin-left: 32px;
+}
+
+.apple-pie {
+  background-image: url(img/Apple-pie-thumbnail.png);
+  background-size: cover;
+}
+
+.cook-time {
+font-family: "Helvetica Neue";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 16px;
+}
+
+.recipe-menu .cook-time {
+width: 224px;
+height: 21px;
+font-family: Helvetica Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+margin-bottom: 16px;
+}
+
+.recipe-menu h1 {
+  margin-bottom: 0px;
+}
+
+.recipe-menu p {
+width: 224px;
+height: 168px;
+font-family: "Helvetica Neue";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+}
+
+.recipe-menu {
+width: 224px;
+height: 168px;
+}
+
+.detail-view {
+  width: 480px;
+  height: 168px;
+  margin-left: 32px;
+}
+
+.ingredient-wrapper {
+  min-height: 93px;
+  display: flex;
+  overflow-x: auto;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  min-width: 100%;
+}
+.ingredient-thumbnail {
+  height: 56px;
+  width: 56px;
+  background-color: #EDEDED; 
+}
+
+.ingredient:nth-child(1) p {
+  width: 64px;
+  height: 28px;
+}
+
+.ingredient-thumbnail:nth-child(1) {
+  background: url(img/rolledoats.png), #EDEDED;
+  background-size: cover;
+  border-radius: 28px;
+}
+
+.ingredient {
+  margin-left: 14px;
+}
+
+.ingredient:nth-child(1) {
+  margin-left: 32px;
+}
+
+.ingredient:nth-child(9) {
+  margin-right: 18px;
+}
+.ingredient p {
+width: 100%;
+height: 28px;
+
+font-family: "Helvetica Neue";
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+line-break:strict;
+text-align: center;
+}
+
+.ingredient:nth-child(2) div {
+  width: 63px;
+  height: 56px;
+  background-image: url(img/quickoats.png);
+}
+
+.ingredient:nth-child(3) div {
+  width: 96px;
+  height: 56px;
+  background-image: url(img/VanillaProteinPowder.png);
+}
+
+.ingredient:nth-child(4) div {
+  width: 70px;
+  height: 56px;
+  background-image: url(img/Molasses.png);
+}
+
+.ingredient:nth-child(5) div {
+  width: 53px;
+  height: 56px;
+  background-image: url(img/Stevia.png);
+}
+
+.ingredient:nth-child(6) div {
+  width: 54px;
+  height: 56px;
+  background-image: url(img/Almond.png);
+}
+
+.ingredient:nth-child(7) div {
+  width: 54px;
+  height: 56px;
+  background-image: url(img/dicedapple.png);
+}
+
+.ingredient:nth-child(8) div {
+  width: 71px;
+  height: 56px;
+  background-image: url(img/hempseeds.png);
+}
+
+.ingredient:nth-child(9) div {
+  width: 83px;
+  height: 56px;
+  background-image: url(img/yogurt.png);
+}
+
+.detail-view h2 {
+  margin-bottom: 8px;
+}
+
+.ingredient-wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+.button {
+margin-top: 18px;
+width: 224px;
+height: 79px;
+background-color: #EDEDED;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 12px;
+text-decoration: none;
+color: #000;
+}
+
+video {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.step {
+  display: flex;
+  flex-wrap: wrap;
+}
+.step h3 {
+width: 275px;
+height: 99px;
+font-family: "Helvetica Neue";
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+
+color: #000000;
+}
+
+.step {
+width: 275px;
+height: 318px;
+position: relative;
+}
+
+.line {
+position: absolute;
+display: inline-flex;
+top: 179px;
+width: 125%;
+height: 16px;
+background: #EDEDED;
+border-radius: 0px;
+margin-left: -16px;
+margin-right: -16px;
+}
+
+.step:nth-child(1) .line {
+  border-radius: 12px;
+  margin-left: 0;
+}
+
+.step:nth-child(14) .line  {
+  border-radius: 12px;
+  margin-right: 0;
+  width: 112.5%;
+}
+
+.step:nth-child(14) {
+  margin-right: 32px;
+}
+
+.circle {
+position: absolute;
+width: 32px;
+height: 32px;
+left: 122px;
+top: 171px;
+border-radius: 50%;
+
+background: #C4C4C4;
+}
+
+.step h3 {
+position: absolute;
+top: 219px;
+}
+
+.step {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.recipe-wrapper {
+  min-height: 343px;
+  max-width: 4298px;
+  display: flex;
+  overflow-x: auto;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -16px;
+  min-width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
