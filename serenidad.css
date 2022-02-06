@@ -493,6 +493,16 @@ top: 219px;
   min-width: 100vw;
 }
 
-::-webkit-scrollbar {
+.recipe-wrapper::-webkit-scrollbar {
   width: 0px;
+}
+
+div.progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(1, 87, 23);
+  z-index: 1;
 }
